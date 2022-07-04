@@ -1,6 +1,9 @@
 {
   "name": "search-api",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.0.0"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
