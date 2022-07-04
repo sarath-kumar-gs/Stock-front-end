@@ -10,7 +10,7 @@ const SearchBar = () => {
     const [selectedId, setSelectedId]  = useState(null)
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/list?name=${search}`).then(values =>{
+        axios.get(`https://stock-app-node.herokuapp.com/list?name=${search}`).then(values =>{
             let newArr = values.data.data.map(item =>{
                 return {label:item.name, id: item._id}
             })

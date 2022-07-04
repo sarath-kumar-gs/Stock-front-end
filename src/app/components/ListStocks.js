@@ -17,7 +17,7 @@ const ListStocks = (props) => {
     }, [data])
     
     useEffect(() => {
-        axios.get(`http://localhost:4000/list/${selectedId}`).then(values =>{
+        axios.get(`https://stock-app-node.herokuapp.com/list/${selectedId}`).then(values =>{
          setData(values.data.data)
         }).catch(e =>{
                 console.log(e)
